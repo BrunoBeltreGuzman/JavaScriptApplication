@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+       <script src="https://kit.fontawesome.com/5892669013.js" crossorigin="anonymous"></script>
+       <title>JavaScript POO</title>
+</head>
+
+<body>
+
+       <!-- NAVIGATION  -->
+       <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+              <div class="container">
+                     <a class="text-light h1" href="./home.html">JavaScript POO</a>
+                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ml-auto">
+                                   <li class="nav-item">
+                                          <a class="nav-link active" id="userName" style="font-size: 18px;"></a>
+                                   </li>
+                                   <li class="nav-item">
+                                          <a class="btn btn-secondary" id="btnUser"><i class="fas fa-user"></i></a>
+                                   </li>
+                            </ul>
+                     </div>
+              </div>
+       </nav>
+       <br>
+       <br>
+       <br>
+       <br>
+       <div class="container card bg bg-dark card-body" style="width: 40%;">
+              <div class="row justify-content-center py-5 bg-light  bg bg-dark">
+                     <!--Form information User-->
+                     <form id="formInfUser" style="width: 80%;">
+                            <div class="bg bg-dark">
+                                   <h1 class="text-center text-light">User information</h1>
+                                   <br>
+                            </div>
+                            <div class="form-group">
+                                   <label class="text text-light" for="name">Name:</label>
+                                   <div class="input-group">
+                                          <div class="input-group-prepend">
+                                                 <span class="input-group-text bg bg-dark"><i
+                                                               class="fas fa-user"></i></span>
+                                          </div>
+                                          <input type="text" class="form-control bg bg-dark text text-light" id="name"
+                                                 required="text" name="textName">
+                                   </div>
+                            </div>
+                            <div class="form-group">
+                                   <label class="text text-light" for="email">Email:</label>
+                                   <div class="input-group">
+                                          <div class="input-group-prepend">
+                                                 <span class="input-group-text bg bg-dark"><i
+                                                               class="fas fa-envelope"></i></span>
+                                          </div>
+                                          <input type="email" class="form-control bg bg-dark text text-light" id="email"
+                                                 required="email" name="textEmail">
+                                   </div>
+                            </div>
+                            <div class="form-group">
+                                   <label class="text text-light" for="passWord">Password:</label>
+                                   <div class="input-group">
+                                          <div class="input-group-prepend">
+                                                 <span class="input-group-text bg bg-dark"><i
+                                                               class="fas fa-key"></i></span>
+                                          </div>
+                                          <input type="password" class="form-control bg bg-dark text text-light"
+                                                 id="password" required="text" name="textPassWord">
+                                   </div>
+                            </div>
+                            <br>
+                            <div class="text text-center">
+                                   <p id="message"></p>
+                            </div>
+                            <br>
+                     </form>
+              </div>
+       </div>
+
+       <br>
+       <br>
+       <div class="col text-center">
+              <button class="btn btn-secondary mr-5" style="width: 8%;" id="btnOut">Out</button>
+              <input type="submit" class="btn btn-warning" style="width: 8%;" id="btnUpdate" value="Update">
+              <button class="btn btn-danger ml-5" style="width: 8%;" id="btnDelete">Delete</button>
+       </div>
+
+       <!--Load Session-->
+       <script src="../scripts/Seccion/main.js" type="module"></script>
+
+       <!--Main Modules-->
+       <script src="../scripts/infUser/main.js" type="module"></script>
+</body>
+
+</html>
